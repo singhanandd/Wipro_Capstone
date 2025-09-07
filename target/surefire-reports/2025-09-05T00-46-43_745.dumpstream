@@ -1,0 +1,5 @@
+# Created at 2025-09-05T00:46:43.973
+Boot Manifest-JAR contains absolute paths in classpath 'D:\maven practice\AmazonSearchAutomation\amazon-search-automation\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

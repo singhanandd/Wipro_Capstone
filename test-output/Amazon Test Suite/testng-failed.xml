@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Amazon Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="baseUrl" value="https://www.amazon.in/"/>
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Amazon Automation Tests(failed)">
+    <classes>
+      <class name="runners.BookPurchaseTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="setupExtent"/>
+          <include name="testBookPurchaseFlow"/>
+          <include name="afterEach"/>
+          <include name="tearDownSuite"/>
+        </methods>
+      </class> <!-- runners.BookPurchaseTest -->
+    </classes>
+  </test> <!-- Amazon Automation Tests(failed) -->
+</suite> <!-- Failed suite [Amazon Test Suite] -->

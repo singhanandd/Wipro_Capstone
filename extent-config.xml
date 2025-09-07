@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+  <configuration>
+    <documentTitle>Automation Test Report</documentTitle>
+    <reportName>Amazon E-Commerce Automation</reportName>
+    <theme>dark</theme>
+    <encoding>UTF-8</encoding>
+    <protocol>https</protocol>
+    <timelineEnabled>true</timelineEnabled>
+    <timeStampFormat>yyyy-MM-dd HH:mm:ss</timeStampFormat>
+  </configuration>
+</extentreports>

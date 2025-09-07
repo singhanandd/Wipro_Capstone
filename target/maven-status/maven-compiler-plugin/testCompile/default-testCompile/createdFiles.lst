@@ -1,0 +1,8 @@
+stepDefinitions\BookPurchaseSteps.class
+stepDefinitions\LoginSteps.class
+stepDefinitions\RegistrationSteps.class
+runners\CucumberTestRunner.class
+stepDefinitions\Hooks.class
+stepDefinitions\SearchSteps.class
+stepDefinitions\CommonSteps.class
+stepDefinitions\HomeSteps.class

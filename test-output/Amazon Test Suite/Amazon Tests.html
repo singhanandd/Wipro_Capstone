@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>TestNG:  Amazon Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Amazon Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 01 22:33:17 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>161 seconds (161180 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.amazon.test.AmazonSearchTest.test_Department_Filter()'><b>test_Department_Filter</b><br>Test class: com.amazon.test.AmazonSearchTest<br/>
+<a href="#Output-1382034610" onClick='toggleBox("Output-1382034610", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1382034610" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1382034610">
+Selecting 'Electronics' department and searching 'Headphones'<br/>
+Assertion passed: department filter applied with results<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.amazon.test.AmazonSearchTest@4e3f2908</td></tr>
+<tr>
+<td title='com.amazon.test.AmazonSearchTest.test_Search_Valid_Enter()'><b>test_Search_Valid_Enter</b><br>Test class: com.amazon.test.AmazonSearchTest<br/>
+<a href="#Output-1659042913" onClick='toggleBox("Output-1659042913", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1659042913" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1659042913">
+Searching 'Mobile' via Enter key<br/>
+Assertion passed: results shown for 'Mobile'<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.amazon.test.AmazonSearchTest@4e3f2908</td></tr>
+<tr>
+<td title='com.amazon.test.AmazonSearchTest.test_Suggestions_SingleChar()'><b>test_Suggestions_SingleChar</b><br>Test class: com.amazon.test.AmazonSearchTest<br/>
+<a href="#Output-1846288568" onClick='toggleBox("Output-1846288568", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1846288568" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1846288568">
+Typing single character 'h' to check suggestions<br/>
+Suggestions loaded: [hand bags for women stylish, headphones bluetooth wireless, hp laptop i5 13th generation 16gb ram, helmet for bike, hair dryer for woman, home decoration items for living room, handwash refill pack, harpic 1 litre, headphones wireless with mic, hot wheels set]<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.amazon.test.AmazonSearchTest@4e3f2908</td></tr>
+<tr>
+<td title='com.amazon.test.AmazonSearchTest.test_Invalid_NoResults()'><b>test_Invalid_NoResults</b><br>Test class: com.amazon.test.AmazonSearchTest<br/>
+<a href="#Output-2139800911" onClick='toggleBox("Output-2139800911", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2139800911" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2139800911">
+Searching invalid term: zzzxxxyyyqwe123456<br/>
+noResults=false, suggestions=false, resultsCount=12, rewritten=false, textSuggests=false, genericResultsForInvalid=true, titles=[]<br/>
+Handled invalid term as expected<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.amazon.test.AmazonSearchTest@4e3f2908</td></tr>
+<tr>
+<td title='com.amazon.test.AmazonSearchTest.test_Search_Valid_Click()'><b>test_Search_Valid_Click</b><br>Test class: com.amazon.test.AmazonSearchTest<br/>
+<a href="#Output-1837542371" onClick='toggleBox("Output-1837542371", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1837542371" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1837542371">
+Opening Amazon home page<br/>
+Typed 'Laptop' in the search box<br/>
+Clicked search button<br/>
+Results page loaded for 'Laptop'<br/>
+Assertion passed: results shown for 'Laptop'<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.amazon.test.AmazonSearchTest@4e3f2908</td></tr>
+<tr>
+<td title='com.amazon.test.AmazonSearchTest.test_Suggestions_UpdateOnMoreChars()'><b>test_Suggestions_UpdateOnMoreChars</b><br>Test class: com.amazon.test.AmazonSearchTest<br/>
+<a href="#Output-285583328" onClick='toggleBox("Output-285583328", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-285583328" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-285583328">
+Typing 'm', then appending 'o' to verify suggestions update<br/>
+First: [motorola phone 5g, macbook air m4, moto edge 60 fusion 5g, mobile phone under 20000, my order details, motorola edge 60 pro, mixer grinder 750, motorola edge 60 fusion, microwave for kitchen, mosquito killer racket] | Second: [motorola phone 5g, moto edge 60 fusion 5g, mobile phone under 20000, mobile phone under 2000+0, motorola edge 60 pro, motorola edge 60 fusion, mosquito killer racket, mouse for laptop, moto g85 5g, moto g85 5+g]<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.amazon.test.AmazonSearchTest@4e3f2908</td></tr>
+<tr>
+<td title='com.amazon.test.AmazonSearchTest.test_Alphanumeric_Valid()'><b>test_Alphanumeric_Valid</b><br>Test class: com.amazon.test.AmazonSearchTest<br/>
+<a href="#Output-1516201401" onClick='toggleBox("Output-1516201401", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1516201401" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1516201401">
+Searching 'iPhone 15'<br/>
+Assertion passed: results shown for 'iPhone 15'<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.amazon.test.AmazonSearchTest@4e3f2908</td></tr>
+<tr>
+<td title='com.amazon.test.AmazonSearchTest.test_LongString_Accepted()'><b>test_LongString_Accepted</b><br>Test class: com.amazon.test.AmazonSearchTest<br/>
+<a href="#Output-1208011078" onClick='toggleBox("Output-1208011078", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1208011078" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1208011078">
+Searching a very long string (length=620)<br/>
+Assertion passed: page handled long input<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.amazon.test.AmazonSearchTest@4e3f2908</td></tr>
+<tr>
+<td title='com.amazon.test.AmazonSearchTest.test_Suggestions_SelectItem()'><b>test_Suggestions_SelectItem</b><br>Test class: com.amazon.test.AmazonSearchTest<br/>
+<a href="#Output-258016632" onClick='toggleBox("Output-258016632", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-258016632" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-258016632">
+Typing 'hea' and selecting first suggestion<br/>
+Chosen suggestion: headphones bluetooth wireless<br/>
+Assertion passed: search box matches chosen suggestion<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.amazon.test.AmazonSearchTest@4e3f2908</td></tr>
+<tr>
+<td title='com.amazon.test.AmazonSearchTest.test_Search_Empty_NoNavigation()'><b>test_Search_Empty_NoNavigation</b><br>Test class: com.amazon.test.AmazonSearchTest<br/>
+<a href="#Output-884713463" onClick='toggleBox("Output-884713463", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-884713463" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-884713463">
+Verifying empty search keeps user on the same page<br/>
+Assertion passed: empty search did not navigate<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.amazon.test.AmazonSearchTest@4e3f2908</td></tr>
+</table><p>
+</body>
+</html>

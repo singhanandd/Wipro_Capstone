@@ -1,0 +1,2 @@
+2025-09-07 13:48:09 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+2025-09-07 13:48:09 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Asus\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe

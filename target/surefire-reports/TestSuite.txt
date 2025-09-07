@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 282.1 s <<< FAILURE! -- in TestSuite
+runners.CucumberTestRunner.runScenario["Successful Book Purchase (Positive Flow)", "E-commerce Book Purchase Flow (Reduced)"](1) -- Time elapsed: 63.72 s <<< FAILURE!
+java.lang.AssertionError: Add to cart button not found on PDP.
+	at org.testng.Assert.fail(Assert.java:111)
+	at stepDefinitions.BookPurchaseSteps.i_add_the_book_to_cart(BookPurchaseSteps.java:116)
+	at ✽.I add the book to cart(file:///D:/maven%20practice/AmazonSearchAutomation/amazon-search-automation/src/test/resources/features/Flow.feature:9)
+

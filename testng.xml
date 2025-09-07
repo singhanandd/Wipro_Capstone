@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Amazon Cucumber Suite" verbose="1" parallel="false">
+  <!-- Project-level params (optional) -->
+  <parameter name="baseUrl" value="https://www.amazon.in/"/>
+  <parameter name="browser" value="chrome"/>
+
+  <test name="Cucumber Features">
+    <classes>
+      <class name="runners.CucumberTestRunner"/>
+    </classes>
+  </test>
+</suite>

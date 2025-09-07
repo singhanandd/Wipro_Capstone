@@ -4,8 +4,8 @@ Feature: Amazon Product Search
   @positive
   Scenario: Valid search using search button
     Given I launch the application
-    When I search for "Laptop" using search button
-    Then I should see search results for "Laptop"
+    When I search for "LED" using search button
+    Then I should see search results for "LED"
 
  
  
@@ -18,8 +18,8 @@ Feature: Amazon Product Search
   Scenario: Search within Electronics department
     Given I launch the application
     When I select "Electronics" department
-    And I search for "Headphones"
-    Then I should see search results for "Headphones" in Electronics
+    And I search for "Speakers"
+    Then I should see search results for "SPeakers" in Electronics
 
  
 
